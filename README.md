@@ -38,18 +38,18 @@ pytest tests/ -v
 <!-- auto-generated – do not edit manually -->
 <!-- last refreshed: 2026-03-27 | 12 items -->
 
-- [ ] **quasar/detector.py:14:** - (alice): validate flux_density > 0 before logging; see https://arxiv.org/abs/2103.12345 for limits
-- [ ] **quasar/detector.py:29:** - switch from linear to log scale for luminosity: note: values span 6 orders of magnitude
-- [ ] **quasar/detector.py:41:** - (bob): cache the result; current call cost: ~200 ms per invocation
-- [ ] **quasar/detector.py:55:** - raise QuasarDetectionError instead of bare ValueError: aligns with PEP 8 naming
-- [ ] **quasar/pipeline.py:18:** - (carol): parallelise with ThreadPoolExecutor; ref: https://docs.python.org/3/library/concurrent.futures.html
-- [ ] **quasar/pipeline.py:33:** - persist checkpoint to disk before shutdown; state key: "pipeline_v2_checkpoint"
-- [ ] **quasar/pipeline.py:47:** - (alice): add retry logic; max_retries: 3, backoff: exponential
-- [ ] **quasar/catalog.py:22:** - load catalog from https://heasarc.gsfc.nasa.gov/W3Browse/all/veroncat.html instead of bundled CSV
-- [ ] **quasar/catalog.py:38:** - (dave): add angular-separation filter; precision: arcseconds, not degrees
-- [ ] **quasar/report.py:16:** - escape colons in source IDs before writing JSON; example: "J123.4+56.7:A" breaks parsers
-- [ ] **quasar/report.py:29:** - (carol): honour user timezone; default: UTC, override via QUASAR_TZ env var
-- [ ] **tests/test_detector.py:24:** - assert error message includes the offending value; format: "flux_density: <value> out of range"
+- [ ] **quasar/detector.py:23:** - (alice): validate flux_density > 0 before logging; see https://arxiv.org/abs/2103.12345 for limits
+- [ ] **quasar/detector.py:31:** - switch from linear to log scale for luminosity: note: values span 6 orders of magnitude
+- [ ] **quasar/detector.py:40:** - (bob): cache the result; current call cost: ~200 ms per invocation
+- [ ] **quasar/detector.py:49:** - raise QuasarDetectionError instead of bare ValueError: aligns with PEP 8 naming
+- [ ] **quasar/pipeline.py:19:** - (carol): parallelise with ThreadPoolExecutor; ref: https://docs.python.org/3/library/concurrent.futures.html
+- [ ] **quasar/pipeline.py:32:** - persist checkpoint to disk before shutdown; state key: "pipeline_v2_checkpoint"
+- [ ] **quasar/pipeline.py:36:** - (alice): add retry logic; max_retries: 3, backoff: exponential
+- [ ] **quasar/catalog.py:25:** - load catalog from https://heasarc.gsfc.nasa.gov/W3Browse/all/veroncat.html instead of bundled CSV
+- [ ] **quasar/catalog.py:39:** - (dave): add angular-separation filter; precision: arcseconds, not degrees
+- [ ] **quasar/report.py:12:** - escape colons in source IDs before writing JSON; example: "J123.4+56.7:A" breaks parsers
+- [ ] **quasar/report.py:17:** - (carol): honour user timezone; default: UTC, override via QUASAR_TZ env var
+- [ ] **tests/test_detector.py:32:** - assert error message includes the offending value; format: "flux_density: <value> out of range"
 
 ---
 
